@@ -28,11 +28,19 @@ def file_list(directory):
 def category(filename):
     extension = os.path.splitext(filename)[1].lower()  # extract files extenstion
     categories = {
-        '.jpg': 'Images', '.jpeg': 'Images', '.png': 'Images', '.gif': 'Images',
-        '.mp3': 'Music', '.wav': 'Music',
-        '.mp4': 'Videos', '.mkv': 'Videos',
-        '.pdf': 'Documents', '.docx': 'Documents', '.txt': 'Documents',
-        '.zip': 'Archives', '.rar': 'Archives',
+        '.jpg': 'Images',
+        '.jpeg': 'Images', 
+        '.png': 'Images', 
+        '.gif': 'Images',
+        '.mp3': 'Music', 
+        '.wav': 'Music',
+        '.mp4': 'Videos', 
+        '.mkv': 'Videos',
+        '.pdf': 'Documents', 
+        '.docx': 'Documents', 
+        '.txt': 'Documents',
+        '.zip': 'Archives', 
+        '.rar': 'Archives',
     }
     
     return categories.get(extension, 'Others')
