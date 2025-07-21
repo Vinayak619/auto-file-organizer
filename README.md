@@ -8,6 +8,7 @@ A simple Python script that helps you keep your folders clean and organized by a
 
 - Sorts all files in a directory into respective folders
 - Supports common file types (JPG, PNG, PDF, MP3, MP4, etc.)
+- Uses `tqdm` progress bar for better user feedback
 - Automatically creates folders if they don’t exist
 - Easy to use – just run and organize with a single command
 
@@ -29,17 +30,16 @@ A simple Python script that helps you keep your folders clean and organized by a
 2. The script scans all files in that folder.
 3. It determines the category of each file based on its extension.
 4. It creates corresponding folders (if needed) and moves files accordingly.
+5. A `tqdm` progress bar shows file-sorting status.
 
 ---
 
 ## 🛠️ Requirements
 
 - Python 3.x
-- No external libraries required (pure Python)
+- [`tqdm`](https://pypi.org/project/tqdm/)
 
----
-
-## 🧪 Running the Script
+To install tqdm:
 
 ```bash
-python project.py
+pip install tqdm
